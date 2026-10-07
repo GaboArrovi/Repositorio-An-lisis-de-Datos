@@ -1,12 +1,21 @@
 """Microreto: el portero del café."""
 
-#energia = 
-#trae_cafe = input("¿Traes café? (si/no): ")
+energia = int(input('Cuánta energía traes del 0-100?: '))
+trae_cafe = input("¿Traes café? (si/no): ").lower().strip()
 
 mensaje = "Completa las reglas del portero."
 
+print('Energía: ', energia)
+print ('Trae café: ', trae_cafe)
+
 # TODO: usa and para detectar energía baja sin café.
+if energia < 30 and not (trae_cafe):
+    mensaje = "Acceso denegado: necesitas dormir o tomar café"
 # TODO: usa or para permitir energía suficiente o café.
+elif energia >=30 or trae_cafe:
+    mensaje = "Acceso permitido: pasa pero falta café"
 # TODO: escribe mensajes claros para cada resultado.
+else:
+    mensaje = "El guarda está confundido. Revisa las respuestas"
 
 print(mensaje)
