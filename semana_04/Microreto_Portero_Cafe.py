@@ -13,7 +13,7 @@ if energia < 30 and not (trae_cafe):
     mensaje = "Acceso denegado: necesitas dormir o tomar café"
 # TODO: usa or para permitir energía suficiente o café.
 elif energia >=30 or trae_cafe:
-    mensaje = "Acceso permitido: pasa pero falta café"
+    mensaje = "Acceso permitido: pasa pero comparte café"
 # TODO: escribe mensajes claros para cada resultado.
 else:
     mensaje = "El guarda está confundido. Revisa las respuestas"
