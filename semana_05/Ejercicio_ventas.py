@@ -13,9 +13,9 @@ print(promedio_centro)
 menor_centro = min(ventas_centro)
 mayor_centro = max(ventas_centro)
 
-porcentaje_logro = total_centro * 100 / meta_centro
+porcentaje_logro_centro = total_centro * 100 / meta_centro
 print(total_centro)
-print(porcentaje_logro)
+print(porcentaje_logro_centro)
 
 total_norte = sum(ventas_norte)
 cantidad_norte = len(ventas_norte)
@@ -27,9 +27,9 @@ print(promedio_norte)
 menor_norte = min(ventas_norte)
 mayor_norte = max(ventas_norte)
 
-porcentaje_logro = total_norte * 100 / meta_norte
+porcentaje_logro_norte = total_norte * 100 / meta_norte
 print(total_norte)
-print(porcentaje_logro)
+print(porcentaje_logro_norte)
 
 # comparación de tiendas
 if total_centro > meta_centro:
@@ -57,8 +57,14 @@ else:
     tienda_mayor_ventas = 'Mismo total'
     
 print('COMPARACIÓN SEMANAL DE TIENDAS')
-print(f"Centro - total ₡{total_centro:,.2f} | Meta ₡{meta_centro:,.2f} | cumplimiento {porcentaje_logro:,.0f}%")
+print(f"Centro - total ₡{total_centro:,.2f} | Meta ₡{meta_centro:,.2f} | cumplimiento {porcentaje_logro_centro:,.0f}%")
 print(f'Centro logro: {estado_centro}\n')
-print(f"Norte - total ₡{total_norte:,.2f} | Meta ₡{meta_norte:,.2f} | cumplimiento {porcentaje_logro:,.0f}%")
+print(f"Norte - total ₡{total_norte:,.2f} | Meta ₡{meta_norte:,.2f} | cumplimiento {porcentaje_logro_norte:,.0f}%")
 print(f'Centro logro: {estado_norte}\n')
+
 print('Tienda con mayor ventas:',tienda_mayor_ventas)
+
+#Conclusiones:
+#La tienda del norte fue la que vendió más
+#Precisamente fue la tienda del norte la que logró alcanzar y superar la meta, a diferencia de la del centro (la cual no alcanzó la meta)
+#Podríamos decir que fue la tienda del centro la que tuvo más variación, teniendo 28000 colones de diferencia (cuando la del norte presenta 25000)
