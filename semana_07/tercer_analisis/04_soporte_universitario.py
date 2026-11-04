@@ -28,7 +28,18 @@ conteo_categorias = {'Acceso': 0, 'Equipo': 0, 'Red': 0}
 casos_pendientes = 0
 provincias_pendientes = set()
 casos_urgentes = []
-caso_mas_largo = (None, -1)
+caso_mas_largo = (None)
+max_minutos = -1
 
 for i in incidencias:
-    total_minutos += 
+    id_caso = i['id']
+    provincia = i['provincia']
+    categoria = i['categoria']
+    minutos = i['minutos_atencion']
+    resuelto = i['resuelto']
+
+    total_minutos += minutos
+    conteo_categorias[categoria] += 1
+
+    if minutos > max_minutos:
+        
