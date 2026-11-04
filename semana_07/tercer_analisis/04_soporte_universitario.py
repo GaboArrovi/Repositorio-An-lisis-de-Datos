@@ -23,3 +23,12 @@ from incidencias import incidencias
 # Prueba: cambie temporalmente INC-07 a resuelto=True. Debe salir de la
 # lista de urgentes, del conteo de pendientes y del set de provincias
 # pendientes, pero seguir como caso más largo. Restaure incidencias.py.
+total_minutos = 0
+conteo_categorias = {'Acceso': 0, 'Equipo': 0, 'Red': 0}
+casos_pendientes = 0
+provincias_pendientes = set()
+casos_urgentes = []
+caso_mas_largo = (None, -1)
+
+for i in incidencias:
+    total_minutos += 
