@@ -13,6 +13,14 @@ ETAPA = 1
 def explorar_atenciones(atenciones):
     """Recibe la lista de atenciones y muestra el total, los tipos y los campos."""
     # P1. Complete el lector y compruebe el mensaje de archivo faltante.
+    total_atenciones = 0
+
+    for atencion in atenciones:
+        total_atenciones += atenciones
+        return total_atenciones
+    print('Total de atenciones: ',total_atenciones)
+    print('Razón de atención: ', atenciones[7])
+    print('N° de campo: ', atenciones[9])
     print("P1. Archivo leído correctamente.")
 
     # P2. Cuente las filas con un ciclo. Compruebe que obtuvo 12.
