@@ -23,6 +23,8 @@ def explorar_atenciones(atenciones):
     print('N° de campo: ', atenciones[9])
     print("P1. Archivo leído correctamente.")
 
+
+
     # P2. Cuente las filas con un ciclo. Compruebe que obtuvo 12.
 
     # P3. Ejemplo listo para ejecutar. Explique qué tipos y campos observa.
@@ -31,6 +33,7 @@ def explorar_atenciones(atenciones):
 
 def contar_y_limpiar(atenciones):
     """Recibe la lista de atenciones y muestra los conteos y sus comprobaciones."""
+
     print("Etapa 2. Complete y compruebe las preguntas 4 a 8.")
     # P4. Cuente los medicamentos tal como aparecen en el CSV con .get().
     # Muestre el contador y su total.
